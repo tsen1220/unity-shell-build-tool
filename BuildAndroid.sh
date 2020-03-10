@@ -9,4 +9,11 @@ if [ ! -d ${DESTINATION_PATH} ]; then
   mkdir ${DESTINATION_PATH}
 fi
 
-$UNITY_PATH -quit -batchmode -projectPath ${PROJECT_PATH} -buildTarget Android -executeMethod AndroidShellBuild.Build -logFile ${BUILD_LOG_PATH} -destinationPath ${DESTINATION_PATH}
+$UNITY_PATH 
+  -quit \
+  -batchmode \
+  -projectPath ${PROJECT_PATH} \
+  -buildTarget Android \
+  -executeMethod AndroidMonoShellBuild.Build \
+  -logFile ${BUILD_LOG_PATH} \
+  -destinationPath ${DESTINATION_PATH}
