@@ -4,6 +4,8 @@ Build the Unity App With Shell Scripts.
 
 We can create App with Unity BuildPipeline.
 
+You need to change Unity path to run and decide your app destination path.
+
 Otherwise, We need customized static methods in Unity Editor directory for commandline args (-executeMethod).
 
 - UNITY_PATH is your Unity location.
