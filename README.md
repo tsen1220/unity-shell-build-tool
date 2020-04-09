@@ -8,6 +8,8 @@ You need to change Unity path to run and decide your app destination path.
 
 Otherwise, We need customized static methods in Unity Editor directory for commandline args (-executeMethod).
 
+The methods is here:https://github.com/tsen1220/UnityShellBuildAppStaticMethods
+
 - UNITY_PATH is your Unity location.
 - PROJECT_PATH is your unity project location.
 - BUILD_LOG_PATH is logfile path.
@@ -16,3 +18,8 @@ Otherwise, We need customized static methods in Unity Editor directory for comma
 - BUILD_CODEVERSION is an argument in Unity Editor C# script. Android BundleCodeVersion for google play.
 - EXECUTE_METHOD is default argument in Unity. Execute static Build methods. For example, -executeMethod iOSShellBuild.Build
 - BUILD_TARGET is default argument in Unity. Choose your build app platform.
+
+BuildMobileApp.sh:
+- $1:platform (android or ios)
+- $2:version (0.1)
+- $3:codeVersion (for android)
